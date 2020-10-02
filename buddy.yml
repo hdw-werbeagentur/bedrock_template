@@ -4,11 +4,11 @@
   target_site_url: "https://xxx.hdw.dev/"
   variables:
   - key: "DEVELOP_REMOTE_PATH"
-    value: ""
+    value: "DEVELOP_REMOTE_PATH"
     settable: true
     description: "FTP project path"
   - key: "WORDPRESS_THEME_NAME"
-    value: ""
+    value: "WORDPRESS_THEME_NAME"
     settable: true
     description: "Direcory name of the wordpress theme"
   actions:
