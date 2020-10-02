@@ -1,16 +1,20 @@
 - pipeline: "Testsystem Deployment"
   trigger_mode: "ON_EVERY_PUSH"
   ref_name: "develop"
-  target_site_url: "https://xxx.hdw.dev/"
   variables:
   - key: "DEVELOP_REMOTE_PATH"
-    value: "DEVELOP_REMOTE_PATH"
+    value: "xxx" #Todo: set
+    settable: true
+    description: "FTP project path"
+  - key: "PROJECT_NAME"
+    value: "xxx" #Todo: set
     settable: true
     description: "FTP project path"
   - key: "WORDPRESS_THEME_NAME"
-    value: "WORDPRESS_THEME_NAME"
+    value: "xxx" #Todo: set
     settable: true
     description: "Direcory name of the wordpress theme"
+  target_site_url: "https://${PROJECT_NAME}.hdw.dev/" #Todo: set
   actions:
   - action: "Install project dependencies"
     type: "BUILD"
