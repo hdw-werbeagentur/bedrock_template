@@ -3,18 +3,14 @@
   ref_name: "develop"
   variables:
   - key: "DEVELOP_REMOTE_PATH"
-    value: "xxx" #Todo: set
-    settable: true
-    description: "FTP project path"
-  - key: "PROJECT_NAME"
-    value: "xxx" #Todo: set
+    value: "xxx" # TODO: set remote path
     settable: true
     description: "FTP project path"
   - key: "WORDPRESS_THEME_NAME"
-    value: "xxx" #Todo: set
+    value: "xxx" # TODO: set theme name
     settable: true
     description: "Direcory name of the wordpress theme"
-  target_site_url: "https://${PROJECT_NAME}.hdw.dev/" #Todo: set
+  target_site_url: "https://xxx.hdw.dev/" # TODO: set project url
   actions:
   - action: "Install project dependencies"
     type: "BUILD"
